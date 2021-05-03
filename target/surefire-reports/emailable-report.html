@@ -8,10 +8,16 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">27,706</td><td></td><td></td></tr>
+<tr><th colspan="8">QATechTesting Test Suite</th></tr>
+<tr><td><a href="#t0">Navigate and Verify Home Page</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">28,472</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4" class="invisible"/></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">QATechTesting Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Navigate and Verify Home Page &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">runner.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1620023177732</td><td rowspan="1">28208</td></tr></tbody>
 </table>
-<h2>Surefire test</h2></body>
+<h2>Navigate and Verify Home Page</h2><h3 id="m0">runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Test Validation for invalid UserName with correct format&quot;</td><td>&quot;ValidationTestForLogin&quot;</td></tr><tr><th colspan="2">Messages</th></tr><tr><td colspan="2"><div class="messages"><div "result">User should be on Login Page (FAILED : 28s)</div><br/><div "result">user should see the &quot;Log in | Typeform&quot; (SKIPPED)</div><br/><div "result">user enter username as &quot;test@test.com&quot; (SKIPPED)</div><br/><div "result">user enter password as &quot;Test@1234&quot; (SKIPPED)</div><br/><div "result">user click on login button (SKIPPED)</div><br/><div "result">user get error message as &quot;Your login info isn&#x27;t right. Try again, or reset your password if it slipped your mind. &quot; (SKIPPED)</div></div></td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Proxy element for: DefaultElementLocator &apos;By.xpath: //button[text()=&apos;Accept All&apos;]&apos;is not available
+	at utility.SeleniumUtility.clickOnElement(SeleniumUtility.java:43)
+	at ActionClasses.CommonUIActions.setAcceptCookies(CommonUIActions.java:24)
+	at StepFiles.PreconditionSteps.userShouldBeOnLoginPage(PreconditionSteps.java:19)
+	at ✽.User should be on Login Page(Features/UITest/ValidationTestForLogin.feature:4)
+... Removed 1 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
 </html>

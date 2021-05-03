@@ -1,0 +1,128 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Proxy element for: DefaultElementLocator \u0027By.xpath: //button[text()\u003d\u0027Accept All\u0027]\u0027is not available\n\tat org.testng.Assert.fail(Assert.java:97)\n\tat utility.SeleniumUtility.clickOnElement(SeleniumUtility.java:43)\n\tat ActionClasses.CommonUIActions.setAcceptCookies(CommonUIActions.java:24)\n\tat StepFiles.PreconditionSteps.userShouldBeOnLoginPage(PreconditionSteps.java:19)\n\tat ✽.User should be on Login Page(Features/UITest/ValidationTestForLogin.feature:4)\n",
+              "duration": 28155109614,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "User should be on Login Page",
+            "match": {
+              "location": "PreconditionSteps.userShouldBeOnLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "Test Validation for invalid UserName with correct format",
+        "description": "",
+        "id": "validationtestforlogin;test-validation-for-invalid-username-with-correct-format",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user should see the \"Log in | Typeform\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log in | Typeform",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginPageSteps.userShouldSeeThe(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user enter username as \"test@test.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test@test.com",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginPageSteps.userEnterUsernameAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user enter password as \"Test@1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test@1234",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginPageSteps.userEnterPasswordAs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user click on login button",
+            "match": {
+              "location": "LoginPageSteps.userClickOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user get error message as \"Your login info isn\u0027t right. Try again, or reset your password if it slipped your mind. \"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Your login info isn\u0027t right. Try again, or reset your password if it slipped your mind. ",
+                  "offset": 27
+                }
+              ],
+              "location": "LoginPageSteps.userGetErrorMessageAs(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestNGScenarios"
+          }
+        ]
+      }
+    ],
+    "name": "ValidationTestForLogin",
+    "description": "",
+    "id": "validationtestforlogin",
+    "keyword": "Feature",
+    "uri": "Features/UITest/ValidationTestForLogin.feature"
+  }
+]

@@ -2,7 +2,7 @@ Feature: ValidationTestForLogin
 
   Background:
     Given User should be on Login Page
-
+  @TestNGScenarios
   Scenario: Test Validation for invalid UserName with correct format
     Then user should see the "Log in | Typeform"
     When user enter username as "test@test.com"
